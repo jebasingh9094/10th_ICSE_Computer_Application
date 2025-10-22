@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Java_LearnHub — Study & Worksheets</title>
+
+  <!-- PT Sans font -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Google Ads (AdSense) -->
+  <!-- Replace ca-pub-XXXXXXXXXXXXXX with your publisher ID; ensure your domain is approved -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/java.svg" alt="" aria-hidden="true">
+      <h1>Java_LearnHub </h1>
+    </div>
+
+        
+    <nav class="site-nav" aria-label="Primary">
+       
+      <button class="nav-btn" data-view="materials" aria-pressed="true">Study Materials</button>
+      <button class="nav-btn" data-view="worksheets" aria-pressed="false">Worksheets</button>
+       <button id="toggleFilters" class="filters-toggle" aria-expanded="false" aria-controls="filtersPanel">
+        ☰ Filters
+        </button>
+    </nav>
+  </header>
+
+  <main class="container">
+     <!-- Filters panel (collapsible on mobile) -->
+    <aside id="filtersPanel" class="filters" aria-label="Filters">
+    <!-- existing filter content -->
+       <h2 class="filters-title">Browse</h2>
+
+     <div class="filter-group">
+        <label for="subjectSelect" class="filter-label">Subject</label>
+        <select id="subjectSelect">
+          <option value="all">All</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="topicSelect" class="filter-label">Topic</label>
+        <select id="topicSelect">
+          <option value="all">All</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="searchInput" class="filter-label">Search</label>
+        <input id="searchInput" type="search" placeholder="e.g., Algebra basics" />
+      </div>
+
+      <button id="clearFilters" class="btn-secondary">Clear filters</button>  
+
+      <!-- Ad slot in sidebar -->
+      <div class="ad-slot">
+        <!-- Example responsive ad unit -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXX"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-re sponsive="true"></ins>
+      </div>
+    </aside>
+<section class="content">
+      <div class="content-header">
+        <h2 id="contentTitle">Study Materials</h2>
+        
+      </div>
+
+      <div id="cardsContainer" class="cards-grid" aria-live="polite"></div>
+
+      <!-- Ad slot between content sections -->
+      <div class="ad-slot-inline">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXX"
+             data-ad-slot="0987654321"
+             data-ad-format="auto"></ins>
+      </div>
+    </section>
+  </main>
+
+<footer class="site-footer">
+  <p>© LearnHub. Empowering students with clear, organized learning.</p>
+
+  <div class="report-section">
+    <h3>Report an Issue</h3>
+    <form id="reportForm">
+      <textarea name="message" id="reportMessage" placeholder="Type your issue here..." required></textarea>
+      <input type="email" name="email" id="reportEmail" placeholder="Your email (optional)">
+      <button type="submit">Send Report</button>
+    </form>
+    <p id="reportStatus"></p>
+  </div>
+</footer>
+
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Initialize ads after DOM load
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</body>
+</html>
