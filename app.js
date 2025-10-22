@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return `
       <article class="card" role="article">
         <div class="card-header">
-          <img src="assets/pdf.svg"  alt="" aria-hidden="true" width="24" height="24">
+          <img src="./pdf.svg"  alt="" aria-hidden="true" width="24" height="24">
           <h3 class="card-title">${escapeHTML(item.title)}</h3>
         </div>
         <div class="card-meta">
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p>${escapeHTML(item.description)}</p>
         <div class="card-actions">
           <a class="download-btn" href="${item.url}" download>
-            <img src="assets/download.svg" alt="" aria-hidden="true" width="18" height="18">
+            <img src="./download.svg" alt="" aria-hidden="true" width="18" height="18">
             Download
           </a>
         </div>
