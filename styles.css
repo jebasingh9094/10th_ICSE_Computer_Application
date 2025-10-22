@@ -277,12 +277,18 @@ select:focus, input[type="search"]:focus {
 }
 /* Base styles (apply to full/desktop view) */
 .filters {
-   
-  
-  background: var(--white);
-  padding: 16px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
+   padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  font-weight: 500;
+  cursor: pointer;
+  transition: 
+    background 200ms ease,
+    border-color 200ms ease,
+    transform 120ms ease,
+    box-shadow 200ms ease;
   display: block;   /* always visible in full view */
   order: 0;         /* default order in grid */
 }
